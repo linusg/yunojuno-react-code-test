@@ -24,6 +24,8 @@ The app was prepared using `react-create-app`. You can run the app using `npm st
 
 `react-create-app` supports ES6 syntax. 
 
+You are free to use whatever third party libraries you want, if you feel it is necessary. 
+
 ## Submission
 
 To make a submission for this test, please fork this repository to work on it. When you want to submit, simply open a pull request, and we will review it.
