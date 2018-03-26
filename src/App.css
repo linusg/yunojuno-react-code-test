@@ -19,3 +19,9 @@
 .App-intro {
     font-size: large;
 }
+
+.App-content {
+    max-width: 1280px;
+    margin: auto;
+}
+

@@ -15,7 +15,9 @@ class App extends Component {
                     </h1>
                 </header>
 
-                <section>{/* Lovely character list goes here */}</section>
+                <section className="App-content">
+                    {/* Lovely character list goes here */}
+                </section>
             </div>
         );
     }
