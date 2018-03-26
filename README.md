@@ -7,7 +7,7 @@ In this repository, there is a simple React app. Currently this app doesn't do a
 * As a user I can
   - see a list of Lord of the Rings characters
   - filter this list by selecting a category, and see only relevant results
-  - order the list alphabetically or by what page they first appear
+  - order the list alphabetically by `name` or by the arbitrary `significanceIndex` value
 
 In service of these user stories, there are some additional requirements:
 
