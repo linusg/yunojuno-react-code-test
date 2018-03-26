@@ -20,7 +20,7 @@ The test should be completable within a few hours, but there is no strict time l
 
 ## Tools
 
-The app was prepared using `react-create-app`. You can run the app using `npm start` or `yarn start`. If you require more info, please refer to the `react-create-app` docs @ [https://github.com/facebook/create-react-app].
+The app was prepared using `react-create-app`. You can run the app using `npm start` or `yarn start`. If you require more info, please refer to the `react-create-app` docs @ https://github.com/facebook/create-react-app.
 
 `react-create-app` supports ES6 syntax. 
 
