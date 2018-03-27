@@ -19,7 +19,9 @@ In service of these user stories, there are some additional requirements:
   - Safari
   - Firefox
   - Edge
-* Support for IE10/11 is considered nice-to-have
+  - Android Chrome
+  - iOS Safari
+  - (Support for IE10/11 is considered nice-to-have)
 
 All the assets necessary (including a JSON file with all the required data) are included in the repository.
 
