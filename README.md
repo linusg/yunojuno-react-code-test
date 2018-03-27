@@ -27,11 +27,15 @@ The test should be completable within a few hours, but there is no strict time l
 
 ## Tools
 
-The app was prepared using `react-create-app`. You can run the app using `npm start` or `yarn start`. If you require more info, please refer to the `react-create-app` docs @ https://github.com/facebook/create-react-app.
+The app was prepared using `react-create-app`. You can run the app using `npm start` or `yarn start`, which will compile the JS and start a local server. 
+
+`yarn watch-css` will compile and watch `App.scss`, although if you prefer you can ignore the SASS file and directly edit `App.css`. Be aware that running any of the CSS build tasks will overwrite `App.css` though, so you may wish to delete the SASS file if you don't intend to use it. 
+
+If you require more info, please refer to the `react-create-app` docs @ https://github.com/facebook/create-react-app.
 
 `react-create-app` supports ES6 syntax. 
 
-You are free to use whatever third party libraries you want, if you feel it is necessary. 
+You are free to use whatever third party libraries or plugins you want, if you feel it is necessary.
 
 ## Submission
 
