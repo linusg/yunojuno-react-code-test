@@ -13,6 +13,13 @@ In service of these user stories, there are some additional requirements:
 
 * Your solution must have some test coverage
 * Your solution should be styled appropriately (based on design provided)
+* The layout at mobile sizes is at your discretion
+* Your solution must be compatible with the latest versions of the following browsers:
+  - Chrome
+  - Safari
+  - Firefox
+  - Edge
+* Support for IE10/11 is considered nice-to-have
 
 All the assets necessary (including a JSON file with all the required data) are included in the repository.
 
