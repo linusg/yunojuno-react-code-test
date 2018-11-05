@@ -42,3 +42,5 @@ You are free to use whatever third party libraries or plugins you want, if you f
 ## Submission
 
 To make a submission for this test, please fork this repository to work on it. When you want to submit, simply open a pull request, and we will review it.
+
+If you aren't comfortable with submitting via a public pull request, please send us a zip file with your submission code instead. 
