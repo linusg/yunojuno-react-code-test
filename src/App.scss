@@ -1,5 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Lato:900');
+
+$content-max-width: 1000px;
+$color-accent-bg: #47d7ac;
+$color-accent-fg: #fff;
+$color-main-bg: #fff;
+$color-main-fg: #222;
+
+select {
+    appearance: none;
+    border: 2px solid $color-accent-bg;
+    border-radius: 3px;
+    margin: 0 5px;
+    padding: 2px 30px 2px 15px;
+    color: $color-main-fg;
+    background-color: transparent;
+    // URL-encoded SVG image for the dropdown arrow
+    background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225%22%20height%3D%2210%22%3E%3Cpath%20fill%3D%22%23222%22%20fill-opacity%3D%221%22%20stroke%3D%22none%22%20d%3D%22M0%2C0%20L0%2C0%20L1%2C0%20L1%2C6%20L7%2C6%20L7%2C7%20L0%2C7%20z%22%20transform%3D%22rotate(-45%205%200)%22%20%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Karla;
+}
+
 .App {
     text-align: center;
+    font-family: Karla;
 }
 
 .App-logo {
@@ -7,21 +34,93 @@
 }
 
 .App-header {
-    background-color: #47d7ac;
     padding: 20px;
-    color: white;
+    background-color: $color-accent-bg;
+    color: $color-accent-fg;
 }
 
 .App-title {
-    font-size: 1.5em;
-}
-
-.App-intro {
-    font-size: large;
+    font-family: Lato;
+    font-size: 1.8em;
+    font-weight: 900;
 }
 
 .App-content {
-    max-width: 1280px;
+    max-width: $content-max-width;
     margin: auto;
 }
 
+.CharacterList__options,
+.CharacterListItem {
+    margin-bottom: 40px;
+    background: $color-main-bg;
+    color: $color-main-fg;
+
+    @media (min-width: $content-max-width) {
+        margin-top: 40px;
+        border-radius: 5px;
+    }
+}
+
+.CharacterList__options {
+    padding: 20px;
+
+    &__spacer {
+        height: 10px;
+
+        @media (min-width: 550px) {
+            display: inline-block;
+            width: 40px;
+            height: 0;
+        }
+    }
+}
+
+.CharacterListItem {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+
+    @media (min-width: $content-max-width) {
+        flex-direction: row;
+    }
+
+    &__summary,
+    &__description {
+        padding: 30px 15px;
+
+        @media (min-width: $content-max-width) {
+            padding: 30px;
+        }
+    }
+
+    &__summary {
+        flex: 1;
+        width: 100%;
+        background-color: $color-accent-bg;
+        color: $color-accent-fg;
+
+        &__avatar {
+            border-radius: 50%;
+            height: 100px;
+        }
+
+        &__name {
+            font-family: Lato;
+            font-size: 1.5em;
+            font-weight: 900;
+            margin: 20px 0 10px 0;
+        }
+
+        &__category {
+            font-size: 1.2em;
+            text-transform: capitalize;
+        }
+    }
+
+    &__description {
+        flex: 2;
+        justify-content: center;
+    }
+}
